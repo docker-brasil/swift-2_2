@@ -5,7 +5,7 @@
 
 ### An Ubuntu 14.04 Docker image for [Swift](https://swift.org).
 
-#### You can find the Docker Hub repo here: [https://hub.docker.com/r/swiftdocker/swift/](https://hub.docker.com/r/swiftdocker/swift/)
+#### You can find the Docker Hub repo here: [https://hub.docker.com/r/parana/swift-2_2/](https://hub.docker.com/r/parana/swift-2_2/)
 
 
 ### Docker Instructions
@@ -13,16 +13,16 @@
 ##### Pull the Docker Image From Docker Hub:
 
 ```bash
-docker pull swiftdocker/swift
+docker pull dockerbrasil/swift-2_2
 ```
 
 ##### Create a container from the Image and attach it:
 
 ```bash
-docker run -i -t --name swiftfun swiftdocker/swift:latest /bin/bash
+docker run -i -t --name swiftfun dockerbrasil/swift-2_2:latest /bin/bash
 ```
 
-##### To start your and attach your image later:
+##### To start your container and attach your image later:
 
 Start your image with name `swiftfun`
 
@@ -36,11 +36,6 @@ and then attach it
 docker attach swiftfun
 ```
 
-
 ## Contributions
 
 Contributions via pull requests are welcome and encouraged :)
-
-## License
-
-docker-swift is licensed under the [MIT License.](LICENSE.md)
