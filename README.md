@@ -5,7 +5,7 @@
 
 ### An Ubuntu 14.04 Docker image for [Swift](https://swift.org).
 
-#### You can find the Docker Hub repo here: [https://hub.docker.com/r/parana/swift-2_2/](https://hub.docker.com/r/parana/swift-2_2/)
+#### You can find the Docker Hub repo here: [https://hub.docker.com/r/dockerbrasil/swift-2_2/](https://hub.docker.com/r/dockerbrasil/swift-2_2/)
 
 
 ### Docker Instructions
