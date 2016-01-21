@@ -6,7 +6,7 @@ FROM ubuntu:14.04
 
 MAINTAINER João Antonio Ferreira "joao.parana@gmail.com"
 
-ENV REFRESHED_AT 2016-01-18
+ENV REFRESHED_AT 2016-01-21
 
 # Ver Downloads para Ubuntu 14.04 em https://swift.org/download/
 # https://swift.org/builds/
@@ -22,7 +22,11 @@ ENV SWIFT_PLATFORM ubuntu1404
 
 # Install related packages
 RUN apt-get update && \
-    apt-get install -y build-essential curl wget clang libedit-dev python2.7 python2.7-dev libicu52 rsync libxml2 git && \
+    apt-get install -y build-essential git curl wget clang libedit-dev python2.7
+
+# Install others packages
+RUN apt-get update && \
+    apt-get install -y python2.7-dev libicu52 rsync libxml2 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
