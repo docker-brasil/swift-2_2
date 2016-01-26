@@ -16,25 +16,43 @@
 docker pull dockerbrasil/swift-2_2
 ```
 
-##### Create a container from the Image and attach it:
+##### Create a container from the Image and run ...
+
+To see help message:
 
 ```bash
-docker run -i -t --name swiftfun dockerbrasil/swift-2_2:latest /bin/bash
+docker run -i -t --rm --name swiftfun dockerbrasil/swift-2_2 --help
 ```
 
-##### To start your container and attach your image later:
-
-Start your image with name `swiftfun`
+Or to run Swift REPL / Debuger
 
 ```bash
-docker start swiftfun
+docker run -i -t --rm --name swiftfun dockerbrasil/swift-2_2 swift
+```
+Now you can use de Swift REPL.
+
+```swift
+let greeting = "Hello!"
+  greeting: String = "Hello!"
+let answer = "forty-two"
+  answer: String = "forty-two"
+"Hi!".re»
+  Available completions:
+    removeAll() -> Void
+    removeAll(keepCapacity: Bool) -> Void
+    removeAtIndex(i: Index) -> Character
+    removeRange(subRange: Range<Index>) -> Void
+    replaceRange(subRange: Range<Index>, with: C) -> Void
+    replaceRange(subRange: Range<Index>, with: String) -> Void
+    reserveCapacity(n: Int) -> Void
+:quit
+
 ```
 
-and then attach it
+You can use TAB key » to see all availables completions
 
-```bash
-docker attach swiftfun
-```
+Use `:quit` to Quit the REPL
+
 
 ## Contributions
 
