@@ -45,6 +45,10 @@ let answer = "forty-two"
     replaceRange(subRange: Range<Index>, with: C) -> Void
     replaceRange(subRange: Range<Index>, with: String) -> Void
     reserveCapacity(n: Int) -> Void
+// Using library on Linux
+import Glibc
+10000 + (random() % 90000)
+  Int = 43623
 :quit
 
 ```
@@ -53,6 +57,7 @@ You can use TAB key » to see all availables completions
 
 Use `:quit` to Quit the REPL
 
+You can read the [getting started guide](https://swift.org/getting-started/) on https://swift.org for details.
 
 ## Contributions
 
